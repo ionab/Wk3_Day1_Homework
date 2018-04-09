@@ -21,10 +21,37 @@ Use the supplied data as the source of data to answer the questions.  Copy the S
 ## Questions
 
 1. Return ALL the data in the 'movies' table.
-
+SELECT * FROM movies;
 2. Return ONLY the name column from the 'people' table
+SELECT name FROM people;
+
+Sarah Bartlett
+ Kelsie Braidwood
+ Liam Kavenns
+ Daniel Childs
+ Victor Chugbo
+ Brian Cooke
+ Patrick Cullen
+ Roberto De Marco
+ Ruaridh Dunbar
+ Edward Fallon
+ Hadsan Geele
+ Paul Kelly
+ John McCollum
+ Andrew Lowrie
+ Callum Mackenzie
+ Chris Marshall
+ Fraser McKay
+ Lyle Mitchell
+ Stuart O'Donnell
+ Connor Rose
+ Nikhil Sharma
+ Scott Stevenson
+(22 rows)
 
 3. Oops! Someone at CodeClan spelled Liam's name wrong! Change it to reflect the proper spelling ('Liam Kavenns' should be 'Liam Cavens').
+UPDATE people SET name = 'Liam Cavens' WHERE name = 'Liam Kavenns';
+
 
 4. Return ONLY your name from the 'people' table.
 

@@ -42,6 +42,7 @@ INSERT INTO people (name) VALUES ('Stuart O''Donnell');
 INSERT INTO people (name) VALUES ('Connor Rose');
 INSERT INTO people (name) VALUES ('Nikhil Sharma');
 INSERT INTO people (name) VALUES ('Scott Stevenson');
+UPDATE people SET name = 'Liam Cavens' WHERE name = 'Liam Kavenns';
 
 INSERT INTO movies (title, year, show_time) VALUES ('Iron Man', 2008, '21:55');
 INSERT INTO movies (title, year, show_time) VALUES ('The Incredible Hulk', 2008, '15:45');
