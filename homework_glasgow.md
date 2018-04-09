@@ -191,6 +191,26 @@ UPDATE title SET show_time = '22:00' WHERE name = 'Guardians of the Galaxy 2';
 
 ##Terminal
 
+marvel=# SELECT * FROM movies;
+ id |                title                | year | show_time
+----+-------------------------------------+------+-----------
+  1 | Iron Man                            | 2008 | 21:55
+  2 | The Incredible Hulk                 | 2008 | 15:45
+  3 | Iron Man 2                          | 2010 | 18:30
+  4 | Thor                                | 2011 | 13:00
+  5 | Captain America: The First Avenger  | 2011 | 23:45
+  6 | Avengers Assemble                   | 2012 | 16:50
+  7 | Iron Man 3                          | 2013 | 16:35
+  8 | Thor: The Dark World                | 2013 | 21:55
+ 10 | Captain America: The Winter Soldier | 2014 | 15:30
+ 12 | Avengers: Age of Ultron             | 2015 | 13:30
+ 13 | Ant-Man                             | 2015 | 19:25
+ 14 | Captain America: Civil War          | 2016 | 16:50
+ 15 | Doctor Strange                      | 2016 | 22:10
+ 17 | Spider-man: Homecoming              | 2017 | 16:40
+ 11 | Guardians of the Galaxy             | 2014 | 21:00
+ 16 | Guardians of the Galaxy 2           | 2017 | 22:00
+(16 rows)
 
 ## Extension
 
