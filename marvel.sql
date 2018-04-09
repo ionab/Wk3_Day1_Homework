@@ -42,7 +42,9 @@ INSERT INTO people (name) VALUES ('Stuart O''Donnell');
 INSERT INTO people (name) VALUES ('Connor Rose');
 INSERT INTO people (name) VALUES ('Nikhil Sharma');
 INSERT INTO people (name) VALUES ('Scott Stevenson');
+INSERT INTO people (name) VALUES ('Ally');
 UPDATE people SET name = 'Liam Cavens' WHERE name = 'Liam Kavenns';
+
 
 INSERT INTO movies (title, year, show_time) VALUES ('Iron Man', 2008, '21:55');
 INSERT INTO movies (title, year, show_time) VALUES ('The Incredible Hulk', 2008, '15:45');
@@ -60,6 +62,10 @@ INSERT INTO movies (title, year, show_time) VALUES ('Ant-Man', 2015, '19:25');
 INSERT INTO movies (title, year, show_time) VALUES ('Captain America: Civil War', 2016, '16:50');
 INSERT INTO movies (title, year, show_time) VALUES ('Doctor Strange', 2016, '22:10');
 INSERT INTO movies (title, year, show_time) VALUES ('Guardians of the Galaxy 2', 2017, '16:30');
+
+DELETE FROM attendances WHERE movie_id = 9;
+DELETE FROM movies WHERE title = 'Batman Begins';
+
 
 INSERT INTO attendances (person_id, movie_id) VALUES (10, 13);
 INSERT INTO attendances (person_id, movie_id) VALUES (7, 8);

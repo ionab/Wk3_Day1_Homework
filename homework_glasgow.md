@@ -70,9 +70,61 @@ marvel=# SELECT name FROM people WHERE name = 'Kelsie Braidwood';
 (1 row)
 
 5. The cinema is showing 'Batman Begins', but Batman is DC, not Marvel! Delete the entry from the 'movies' table.
-##SQL File 
+##SQL File ##attendances first
+DELETE FROM attendances WHERE movie_id = 9;
+DELETE FROM movies WHERE title = 'Batman Begins';
+##Terminal
+marvel=# SELECT title FROM movies;
+                title                
+-------------------------------------
+ Iron Man
+ The Incredible Hulk
+ Iron Man 2
+ Thor
+ Captain America: The First Avenger
+ Avengers Assemble
+ Iron Man 3
+ Thor: The Dark World
+ Captain America: The Winter Soldier
+ Guardians of the Galaxy
+ Avengers: Age of Ultron
+ Ant-Man
+ Captain America: Civil War
+ Doctor Strange
+ Guardians of the Galaxy 2
+(15 rows)
 
 6. Create a new entry in the 'people' table with the name of one of the instructors.
+##SQL file
+INSERT INTO people (name) VALUES ('Ally');
+##Terminal
+marvel=# SELECT name FROM people;
+       name       
+------------------
+ Sarah Bartlett
+ Kelsie Braidwood
+ Daniel Childs
+ Victor Chugbo
+ Brian Cooke
+ Patrick Cullen
+ Roberto De Marco
+ Ruaridh Dunbar
+ Edward Fallon
+ Hadsan Geele
+ Paul Kelly
+ John McCollum
+ Andrew Lowrie
+ Callum Mackenzie
+ Chris Marshall
+ Fraser McKay
+ Lyle Mitchell
+ Stuart O'Donnell
+ Connor Rose
+ Nikhil Sharma
+ Scott Stevenson
+ Ally
+ Liam Cavens
+(23 rows)
 
 7. John McCollum has decided to hijack our movie evening, Remove him from the table of people.
 
