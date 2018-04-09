@@ -215,3 +215,11 @@ marvel=# SELECT * FROM movies;
 ## Extension
 
 1. Research how to delete multiple entries from your table in a single command.
+Here we use the key word or, and need to declare the title = on both.
+If we wanted to delete from two columns, we would use the key word AND.
+So, if we only wanted to use the Guardians of the Galaxy it was showing at 12:00 we would use:
+DELETE FROM movies WHERE title = 'Guardians of the Galaxy ' AND show_time = '12:00';
+
+
+##SQL Document
+DELETE FROM movies WHERE title = 'Iron Man 2' OR title = 'Avengers: Age of Ultron';
