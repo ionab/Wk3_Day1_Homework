@@ -185,6 +185,13 @@ marvel=# SELECT * FROM movies;
 
 9. The cinema would also like to make the Guardian movies a back to back feature. Update the 'Guardians of the Galaxy' show time from 15:30 to 21:00, and the 'Guardians of the Galaxy 2' show time from '16:30' to '22:00'.
 
+##SQL document
+UPDATE title SET show_time = '21:00' WHERE name = 'Guardians of the Galaxy';
+UPDATE title SET show_time = '22:00' WHERE name = 'Guardians of the Galaxy 2';
+
+##Terminal
+
+
 ## Extension
 
 1. Research how to delete multiple entries from your table in a single command.

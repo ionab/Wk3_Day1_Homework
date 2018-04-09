@@ -70,6 +70,9 @@ INSERT INTO movies (title, year, show_time) VALUES ('Spider-man: Homecoming', 20
 DELETE FROM attendances WHERE movie_id = 9;
 DELETE FROM movies WHERE title = 'Batman Begins';
 
+UPDATE movies SET show_time = '21:00' WHERE title = 'Guardians of the Galaxy';
+UPDATE movies SET show_time = '22:00' WHERE title = 'Guardians of the Galaxy 2';
+
 
 INSERT INTO attendances (person_id, movie_id) VALUES (10, 13);
 INSERT INTO attendances (person_id, movie_id) VALUES (7, 8);
