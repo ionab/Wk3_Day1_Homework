@@ -21,8 +21,10 @@ Use the supplied data as the source of data to answer the questions.  Copy the S
 ## Questions
 
 1. Return ALL the data in the 'movies' table.
+##Terminal
 SELECT * FROM movies;
 2. Return ONLY the name column from the 'people' table
+##Terminal
 SELECT name FROM people;
 
 Sarah Bartlett
@@ -50,7 +52,15 @@ Sarah Bartlett
 (22 rows)
 
 3. Oops! Someone at CodeClan spelled Liam's name wrong! Change it to reflect the proper spelling ('Liam Kavenns' should be 'Liam Cavens').
+##SQL file
 UPDATE people SET name = 'Liam Cavens' WHERE name = 'Liam Kavenns';
+##Terminal
+SELECT name FROM people WHERE name = 'Liam Cavens';
+    name     
+-------------
+ Liam Cavens
+(1 row)
+
 
 
 4. Return ONLY your name from the 'people' table.
