@@ -61,11 +61,16 @@ SELECT name FROM people WHERE name = 'Liam Cavens';
  Liam Cavens
 (1 row)
 
-
-
 4. Return ONLY your name from the 'people' table.
+##Terminal
+marvel=# SELECT name FROM people WHERE name = 'Kelsie Braidwood';
+       name       
+------------------
+ Kelsie Braidwood
+(1 row)
 
 5. The cinema is showing 'Batman Begins', but Batman is DC, not Marvel! Delete the entry from the 'movies' table.
+##SQL File 
 
 6. Create a new entry in the 'people' table with the name of one of the instructors.
 
