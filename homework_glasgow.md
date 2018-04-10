@@ -1,5 +1,7 @@
 # SQL Homework
 
+
+##NOTE TO SELF KELSIE. Where you have made changes to the SQL document, you can just insert these commands into terminal within the psql file to learn the commands. This will change the database too. Usually this would be done in the code document the way you have done.
 The Glasgow Film Theatre are having a Marvel Movie Marathon! They have asked you to help maintain their database of movies with times and attendees.
 
 ## To access the database:
@@ -186,8 +188,9 @@ marvel=# SELECT * FROM movies;
 9. The cinema would also like to make the Guardian movies a back to back feature. Update the 'Guardians of the Galaxy' show time from 15:30 to 21:00, and the 'Guardians of the Galaxy 2' show time from '16:30' to '22:00'.
 
 ##SQL document
-UPDATE title SET show_time = '21:00' WHERE name = 'Guardians of the Galaxy';
-UPDATE title SET show_time = '22:00' WHERE name = 'Guardians of the Galaxy 2';
+##update this to be...
+UPDATE movies SET show_time = '21:00' WHERE title = 'Guardians of the Galaxy';
+UPDATE movies SET show_time = '22:00' WHERE title = 'Guardians of the Galaxy 2';
 
 ##Terminal
 
@@ -219,7 +222,5 @@ Here we use the key word or, and need to declare the title = on both.
 If we wanted to delete from two columns, we would use the key word AND.
 So, if we only wanted to use the Guardians of the Galaxy it was showing at 12:00 we would use:
 DELETE FROM movies WHERE title = 'Guardians of the Galaxy ' AND show_time = '12:00';
-
-
 ##SQL Document
 DELETE FROM movies WHERE title = 'Iron Man 2' OR title = 'Avengers: Age of Ultron';
